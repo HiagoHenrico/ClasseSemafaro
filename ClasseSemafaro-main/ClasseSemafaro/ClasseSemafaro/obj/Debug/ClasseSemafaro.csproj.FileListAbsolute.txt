@@ -1,0 +1,6 @@
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.csproj.AssemblyReference.cache
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.csproj.SuggestedBindingRedirects.cache
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.Form1.resources
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.Properties.Resources.resources
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.csproj.GenerateResource.cache
+C:\Users\aluno\source\repos\ClasseSemafaro-main\ClasseSemafaro\ClasseSemafaro\obj\Debug\ClasseSemafaro.csproj.CoreCompileInputs.cache
