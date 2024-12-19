@@ -13,11 +13,15 @@ namespace ClasseSemafaro
         public Luzes()
         {
             this.estado = 0;
-        }
 
-        public void SetVerde(int rua)
+        }
+        public void acender(int led)
         {
             estado = (byte)((int)estado | (int)(Math.Pow(2, (led - 1))));
+        }
+        public void SetVerde(int rua)
+        {
+            // estado = (byte)((int)estado | (int)(Math.Pow(2, (led - 1))));
         }
 
         public void SetVermelho(int rua)

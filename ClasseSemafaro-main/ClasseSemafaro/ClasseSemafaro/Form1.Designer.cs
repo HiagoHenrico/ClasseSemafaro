@@ -69,9 +69,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(134, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Rua 1";
+            this.label1.Text = "Semáfaro 1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -79,9 +79,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(564, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Rua 2";
+            this.label2.Text = "Semáfaro 2";
             // 
             // txtEstado
             // 
@@ -99,6 +99,7 @@
             this.chkVermelho1.TabIndex = 8;
             this.chkVermelho1.Text = "Vermelho";
             this.chkVermelho1.UseVisualStyleBackColor = true;
+            this.chkVermelho1.CheckedChanged += new System.EventHandler(this.chkVermelho1_CheckedChanged);
             // 
             // chkAmarelo1
             // 
@@ -109,6 +110,7 @@
             this.chkAmarelo1.TabIndex = 9;
             this.chkAmarelo1.Text = "Amarelo";
             this.chkAmarelo1.UseVisualStyleBackColor = true;
+            this.chkAmarelo1.CheckedChanged += new System.EventHandler(this.chkAmarelo1_CheckedChanged);
             // 
             // chkVerde1
             // 
@@ -119,6 +121,7 @@
             this.chkVerde1.TabIndex = 10;
             this.chkVerde1.Text = "Verde";
             this.chkVerde1.UseVisualStyleBackColor = true;
+            this.chkVerde1.CheckedChanged += new System.EventHandler(this.chkVerde1_CheckedChanged);
             // 
             // chkVermelho2
             // 
@@ -129,6 +132,7 @@
             this.chkVermelho2.TabIndex = 11;
             this.chkVermelho2.Text = "Vermelho";
             this.chkVermelho2.UseVisualStyleBackColor = true;
+            this.chkVermelho2.CheckedChanged += new System.EventHandler(this.chkVermelho2_CheckedChanged);
             // 
             // chkAmarelo2
             // 
@@ -150,6 +154,7 @@
             this.chkVerde2.TabIndex = 13;
             this.chkVerde2.Text = "Verde";
             this.chkVerde2.UseVisualStyleBackColor = true;
+            this.chkVerde2.CheckedChanged += new System.EventHandler(this.chkVerde2_CheckedChanged);
             // 
             // Form1
             // 
@@ -169,6 +174,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -12,17 +12,18 @@ namespace ClasseSemafaro
 {
     public partial class Form1 : Form
     {
+        private Semafaro sem;
         public Form1()
         {
             InitializeComponent();
-            meusLeds = new Semafaro(129);
+            sem = new Semafaro(8);
             atualizaInterface();
         }
 
         private void atualizaInterface()
         {
-            txtDado.Text = meusLeds.getDado().ToString();
-            txtDado2.Text = Convert.ToString(meusLeds.getDado(), 2);
+            txtEstado.Text = sem.getDado().ToString();
+            /*txtDado2.Text = Convert.ToString(meusLeds.getDado(), 2);
             txtDado16.Text = Convert.ToString(meusLeds.getDado(), 16);
             chkLed1.Checked = meusLeds.getLed(1);
             chkLed2.Checked = meusLeds.getLed(2);
@@ -35,7 +36,7 @@ namespace ClasseSemafaro
                              projLeds.Properties.Resources.apagada);
             picLed3.Image = (meusLeds.getLed(3) ?
                              projLeds.Properties.Resources.acesa :
-                             projLeds.Properties.Resources.apagada);
+                             projLeds.Properties.Resources.apagada); */
            
         }
 
@@ -52,12 +53,49 @@ namespace ClasseSemafaro
 
         private void btnSem1Vermelho_Click(object sender, EventArgs e)
         {
-
+            sem.acender(1);
+            atualizaInterface();
         }
 
         private void chkAmarelo2_CheckedChanged(object sender, EventArgs e)
         {
+            sem.acender(1);
+            atualizaInterface();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkVermelho1_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.acender(1);
+            atualizaInterface();
+        }
+
+        private void chkAmarelo1_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.acender(1);
+            atualizaInterface();
+        }
+
+        private void chkVerde1_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.acender(1);
+            atualizaInterface();
+        }
+
+        private void chkVermelho2_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.acender(1);
+            atualizaInterface();
+        }
+
+        private void chkVerde2_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.acender(1);
+            atualizaInterface();
         }
     }
 }
