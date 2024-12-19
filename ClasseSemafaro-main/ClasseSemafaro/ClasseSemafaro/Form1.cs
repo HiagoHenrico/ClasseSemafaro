@@ -22,22 +22,45 @@ namespace ClasseSemafaro
 
         private void atualizaInterface()
         {
-            txtEstado.Text = sem.getDado().ToString();
-            /*txtDado2.Text = Convert.ToString(meusLeds.getDado(), 2);
-            txtDado16.Text = Convert.ToString(meusLeds.getDado(), 16);
-            chkLed1.Checked = meusLeds.getLed(1);
-            chkLed2.Checked = meusLeds.getLed(2);
-            chkLed3.Checked = meusLeds.getLed(3);
-            picLed1.Image = (meusLeds.getLed(1) ?
-                             projLeds.Properties.Resources.acesa :
-                             projLeds.Properties.Resources.apagada);
-            picLed2.Image = (meusLeds.getLed(2) ?
-                             projLeds.Properties.Resources.acesa :
-                             projLeds.Properties.Resources.apagada);
-            picLed3.Image = (meusLeds.getLed(3) ?
-                             projLeds.Properties.Resources.acesa :
-                             projLeds.Properties.Resources.apagada); */
-           
+            txtEstBinario.Text = sem.GetEstado().ToString();
+            txtEstDecimal.Text = Convert.ToString(sem.GetEstado(), 2);
+            txtEstHexadecimal.Text = Convert.ToString(sem.GetEstado(), 16);
+
+            chkVermelho1.Checked = sem.GetSemafaro(1);
+            chkAmarelo1.Checked = sem.GetSemafaro(2);
+            chkVerde1.Checked = sem.GetSemafaro(3);
+
+            chkVermelho2.Checked = sem.GetSemafaro(8);
+            chkAmarelo2.Checked = sem.GetSemafaro(7);
+            chkVerde2.Checked = sem.GetSemafaro(6);
+
+            //SEMAFARO 1
+            pictureBox2.Image = (sem.GetSemafaro(1) ?
+                           ClasseSemafaro.Properties.Resources.semafaroVermelho :
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+
+            pictureBox2.Image = (sem.GetSemafaro(2) ?
+                           ClasseSemafaro.Properties.Resources.semafaroAmarelo:
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+
+            pictureBox2.Image = (sem.GetSemafaro(3) ?
+                           ClasseSemafaro.Properties.Resources.semafaroVerde :
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+
+            //SEMAFARO 2
+            pictureBox1.Image = (sem.GetSemafaro(8) ?
+                           ClasseSemafaro.Properties.Resources.semafaroVermelho :
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+            
+            pictureBox1.Image = (sem.GetSemafaro(7) ?
+                           ClasseSemafaro.Properties.Resources.semafaroAmarelo :
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+
+            pictureBox1.Image = (sem.GetSemafaro(6) ?
+                           ClasseSemafaro.Properties.Resources.semafaroVerde :
+                             ClasseSemafaro.Properties.Resources.semafaroApagado1);
+            
+            
         }
 
 
@@ -46,56 +69,51 @@ namespace ClasseSemafaro
 
         }
 
+        //Semafaro 01
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSem1Vermelho_Click(object sender, EventArgs e)
-        {
-            sem.acender(1);
-            atualizaInterface();
-        }
-
-        private void chkAmarelo2_CheckedChanged(object sender, EventArgs e)
-        {
-            sem.acender(1);
-            atualizaInterface();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
         private void chkVermelho1_CheckedChanged(object sender, EventArgs e)
         {
-            sem.acender(1);
+            sem.SetVermelho(1);
             atualizaInterface();
         }
-
         private void chkAmarelo1_CheckedChanged(object sender, EventArgs e)
         {
-            sem.acender(1);
+            sem.SetAmarelo(2);
             atualizaInterface();
         }
-
         private void chkVerde1_CheckedChanged(object sender, EventArgs e)
         {
-            sem.acender(1);
+            sem.SetVerde(3);
             atualizaInterface();
         }
 
+        //Semafaro 02
         private void chkVermelho2_CheckedChanged(object sender, EventArgs e)
         {
-            sem.acender(1);
+            sem.SetVermelho(8);
+            atualizaInterface();
+        }
+        private void chkAmarelo2_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.SetAmarelo(7);
+            atualizaInterface();
+        }
+        private void chkVerde2_CheckedChanged(object sender, EventArgs e)
+        {
+            sem.SetVerde(6);
             atualizaInterface();
         }
 
-        private void chkVerde2_CheckedChanged(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            sem.acender(1);
-            atualizaInterface();
+
         }
+
+       
     }
 }

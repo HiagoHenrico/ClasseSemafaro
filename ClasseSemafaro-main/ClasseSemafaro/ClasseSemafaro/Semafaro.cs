@@ -10,28 +10,29 @@ namespace ClasseSemafaro
     {
         private byte estado;
 
-        public Luzes()
+        public Semafaro()
         {
             this.estado = 0;
-
-        }
-        public void acender(int led)
-        {
-            estado = (byte)((int)estado | (int)(Math.Pow(2, (led - 1))));
-        }
-        public void SetVerde(int rua)
-        {
-            // estado = (byte)((int)estado | (int)(Math.Pow(2, (led - 1))));
         }
 
-        public void SetVermelho(int rua)
+        public Semafaro(byte estado)
         {
-
+            this.estado = estado;
+        }
+      
+        public void SetVerde(int semafaro)
+        {
+            estado = (byte)((int)estado | (int)(Math.Pow(2, (semafaro - 1))));
         }
 
-        public void SetAmarelo(int rua)
+        public void SetVermelho(int semafaro)
         {
+            estado = (byte)((int)estado | (int)(Math.Pow(2, (semafaro - 1))));
+        }
 
+        public void SetAmarelo(int semafaro)
+        {
+            estado = (byte)((int)estado | (int)(Math.Pow(2, (semafaro - 1))));
         }
 
         public byte GetEstado()
@@ -40,9 +41,11 @@ namespace ClasseSemafaro
 
         }
 
-        public int GetEstado(int rua)
+        public bool GetSemafaro(int semafaro)
         {
-
+            byte teste;
+            teste = (byte)((int)estado & (int)(Math.Pow(2, (semafaro - 1))));
+            return (teste > 0);
         }
     }
 }

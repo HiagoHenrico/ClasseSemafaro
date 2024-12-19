@@ -32,13 +32,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtEstBinario = new System.Windows.Forms.TextBox();
             this.chkVermelho1 = new System.Windows.Forms.CheckBox();
             this.chkAmarelo1 = new System.Windows.Forms.CheckBox();
             this.chkVerde1 = new System.Windows.Forms.CheckBox();
             this.chkVermelho2 = new System.Windows.Forms.CheckBox();
             this.chkAmarelo2 = new System.Windows.Forms.CheckBox();
             this.chkVerde2 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEstHexadecimal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEstDecimal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,12 +88,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Semáfaro 2";
             // 
-            // txtEstado
+            // txtEstBinario
             // 
-            this.txtEstado.Location = new System.Drawing.Point(272, 343);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(267, 20);
-            this.txtEstado.TabIndex = 7;
+            this.txtEstBinario.Location = new System.Drawing.Point(293, 343);
+            this.txtEstBinario.Name = "txtEstBinario";
+            this.txtEstBinario.Size = new System.Drawing.Size(180, 20);
+            this.txtEstBinario.TabIndex = 7;
             // 
             // chkVermelho1
             // 
@@ -156,18 +161,64 @@
             this.chkVerde2.UseVisualStyleBackColor = true;
             this.chkVerde2.CheckedChanged += new System.EventHandler(this.chkVerde2_CheckedChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(291, 327);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "BINÁRIO";
+            // 
+            // txtEstHexadecimal
+            // 
+            this.txtEstHexadecimal.Location = new System.Drawing.Point(479, 343);
+            this.txtEstHexadecimal.Name = "txtEstHexadecimal";
+            this.txtEstHexadecimal.Size = new System.Drawing.Size(146, 20);
+            this.txtEstHexadecimal.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(476, 327);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "HEXADECIMAL";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(160, 327);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "DECIMAL";
+            // 
+            // txtEstDecimal
+            // 
+            this.txtEstDecimal.Location = new System.Drawing.Point(163, 343);
+            this.txtEstDecimal.Name = "txtEstDecimal";
+            this.txtEstDecimal.Size = new System.Drawing.Size(100, 20);
+            this.txtEstDecimal.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtEstDecimal);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtEstHexadecimal);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.chkVerde2);
             this.Controls.Add(this.chkAmarelo2);
             this.Controls.Add(this.chkVermelho2);
             this.Controls.Add(this.chkVerde1);
             this.Controls.Add(this.chkAmarelo1);
             this.Controls.Add(this.chkVermelho1);
-            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtEstBinario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -188,13 +239,18 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtEstBinario;
         private System.Windows.Forms.CheckBox chkVermelho1;
         private System.Windows.Forms.CheckBox chkAmarelo1;
         private System.Windows.Forms.CheckBox chkVerde1;
         private System.Windows.Forms.CheckBox chkVermelho2;
         private System.Windows.Forms.CheckBox chkAmarelo2;
         private System.Windows.Forms.CheckBox chkVerde2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtEstHexadecimal;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtEstDecimal;
     }
 }
 
